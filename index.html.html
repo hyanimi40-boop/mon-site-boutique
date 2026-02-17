@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Site Pro</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f9fc;
+color:#222;
+}
+
+/* NAVBAR PRO */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:white;
+position:sticky;
+top:0;
+z-index:1000;
+transition:0.3s;
+}
+
+header.scrolled{
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.logo{
+font-weight:700;
+font-size:20px;
+}
+
+nav{
+display:flex;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+/* MENU MOBILE */
+.menu-toggle{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+/* HERO STYLE APPLE */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#ffffff,#eef4ff);
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:15px;
+animation:fadeIn 1s ease;
+}
+
+.hero p{
+max-width:600px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#0077ff;
+color:white;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* SECTIONS */
+section{
+padding:70px 10%;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* CTA */
+.cta{
+background:#0077ff;
+color:white;
+text-align:center;
+border-radius:15px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:30px;
+background:white;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+nav{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+right:20px;
+background:white;
+padding:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+nav.active{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo-container">
+        <span class="logo-text">MON CITE</span>
+    </div>
+
+    <nav class="menu">
+        <a href="#">Accueil</a>
+        <a href="#">Services</a>
+        <a href="#">À propos</a>
+        <a href="#">Contact</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+<h1>bienvenue sur notre site de commerce. nous somme ravis de vous accueillir</h1>
+<p>Simple. Moderne. Professionnel.</p>
+<a href="decouvrir.html" class="btn-decouvrir">Découvrir</a>
+</section>
+
+<section id="services">
+<h2>Nos Services</h2>
+<div class="grid">
+<div class="card">Service 1:<p> Nous mettons a votre disposition une planteforme de commerce en ligne simple,rapide et securiser pour repondre a tous vos besoins sur notre site, vous pouvez:</p><p>*decouvrir une large selection de produits de qualiter.</p>
+<p>*commander facilement depuis votre telephone ou ordinateurs.</p>
+<p>*beneficier de prix competitifs et d'offres attractives</p>
+<p>*profiter d'un Service cliens disponible et a l'ecoute</p>
+<p>*recevoire vos commandes dans les meilleurs details</p></div>
+
+<div class="card">Service 2 <p>LIVRAISON & ASSISTANCE</p> <p>avec notre services, vous beneficier de : </p>
+    <p>~livraison securiseret suivi de commande</p>
+    <p>~posibilite d'echange selon les conditions prevues </p>
+    <p>~assistance cliens reactive pour toutes vos questions</p>
+    <p>~paiement securiser et protection de vos informations</p>
+    <p>votre satisfaction est notre prioriter. Nous nous engangeons a vous offrir un service professionnelle,transparent et digne de confiance</p></div>
+    
+<div class="card">Service 3 : <p>GARANTIE QUALITER & AVANTAGES CLIENS </p> <P>nous selectionnons avec riguer des produits fiables et conformes aux attentes de nos cliens. chaque article proposer sur notre planteforme repond a des standards de qualiter stricts</P>
+    <p>avec notre engagement qualiter,vous beneficier de :</p>
+    <p>~ produits soigneusement verifies avant mise en vente </p>
+    <p>~garantie sur certains articles selon les condition indiquez </p>
+    <p>~offres promotionnelles regulieres et reduction exclusives</p>
+    <p>avantages speciaux pour nos cliens fideles </p>
+    <p>notre mission est de construire une relation durables basser sur la confiance, la  transparence et la satisfaction</p>
+</div>
+</div>
+</section>
+
+<section id="apropos">
+<h2>À propos</h2>
+<p>Bienvenue sur notre plateforme professionnelle de commerce en ligne.nous vous proposons une selection de produit de qualiter,accessibles et adapter a vos besoins quotidiens.</p>
+<p>notre objectif est de vous offrir une experience simple,rapide et securiser pour vos achats en ligne. merci de nous faire confiance</p>
+ 
+</section>
+
+<section id="contact" class="cta">
+<h2>Prêt à commencer ?</h2>
+<a href="#" class="btn">
+   <a href="contact.html" class="btn">Nous contacter</a>
+</section>
+
+<footer>
+<p>© 2026 MonSite</p>
+</footer>
+
+<script>
+
+/* effet navbar scroll */
+window.addEventListener("scroll", function(){
+const header=document.querySelector("header");
+header.classList.toggle("scrolled", window.scrollY>50);
+});
+
+/* menu mobile */
+function toggleMenu(){
+document.getElementById("nav").classList.toggle("active");
+}   
+</script>
+
+</body>
+</html>

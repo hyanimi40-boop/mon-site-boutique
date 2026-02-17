@@ -1,0 +1,87 @@
+.btn-retour {
+    background-color: #2f86e0; /* couleur bleu */
+    color: white;
+    padding: 15px 35px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-retour:hover {
+    background-color: #1f6fc2; /* bleu plus foncé au survol */
+}.btn-contact {
+    display: block;
+    background: #2f80ed;
+    color: white;
+    padding: 15px;
+    margin: 15px auto;
+    width: 250px;
+    text-align: center;
+    border-radius: 12px;
+    textz-decoration: none;
+    font-size: 18px;
+}html{
+scroll-behavior:smooth;
+}
+.btn-decouvrir{display: inline-block;padding: 12px 25px;background-color: #1e90ff;color: white;font-size: 18px;border-radius: 10px;text-decoration: none;transition: 0.3s;}
+.btn-decouvrir:hover{background-color: #103e8b;transform: scale(1.05);}
+
+body{animation: fadeIn 0.8s ease-in;}
+@keyframes fadeIn{from{opacity: 0;} to {opacity: 1;}}
+.produits{display: flex;justify-content: center;gap: 20px;margin-top: 40px;flex-wrap: wrap;}
+.carte-produit{background:white;width: 250px;padding: 15px;border-radius: 10;box-shadow: 04px 15px rgba(0,0,0,0.1);text-align: center;transition: 0.3s ease;}
+.carte-produit:hover{transform: translateY(-10px);}
+.carte-produit img{width: 100%;border-radius: 8px;}
+.prix{color: #007bff;font-weight: bold;margin-top: 10px;}
+.bouton {
+  background-color: #10a37f; 
+  color: white;              
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.logo {
+    height: 60px;
+}
+.logo-container {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.logo-img {
+   height: 50px;
+}
+
+.logo-text {
+   font-weight: bold;
+   font-size: 20px;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-img{
+    height:50px;
+}
+.menu a {
+   margin-left: 20px;
+   text-decoration: none;
+   color: black;
+   font-weight: 500;
+}
+
+.menu a:hover {
+   color: #007bff;
+}
